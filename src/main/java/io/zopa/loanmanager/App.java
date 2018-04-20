@@ -66,7 +66,7 @@ public class App
         LoanResult loanResult = loanManager.getLoanResult(marketFileList, loanAmount);
         if (null == loanResult) {
             System.out.println("It is not possible to provide a quote at this time.");
-            System.exit(1);
+            System.exit(0);
         }
        
         System.out.println(loanResult.toString());
