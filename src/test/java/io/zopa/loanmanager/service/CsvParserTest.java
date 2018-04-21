@@ -23,8 +23,6 @@ public class CsvParserTest {
 
     @Test
     public void processInputFileTest() throws IOException {
-
-
         CsvParser cvsParser = new CsvParser();
         List<MarketFile> marketFileList = cvsParser.processInputFile(filePath);
         assertEquals(marketFileList.size(), 7);
